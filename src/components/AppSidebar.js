@@ -15,6 +15,7 @@ import { AppSidebarNav } from './AppSidebarNav'
 
 import { logo } from 'src/assets/brand/logo'
 import { sygnet } from 'src/assets/brand/sygnet'
+import KotiChargeLogo from 'src/assets/brand/KotiChargeLogo.png';
 
 // sidebar nav config
 import navigation from '../_nav'
@@ -37,8 +38,21 @@ const AppSidebar = () => {
     >
       <CSidebarHeader className="border-bottom">
         <CSidebarBrand to="/">
-          <CIcon customClassName="sidebar-brand-full" icon={logo} height={32} />
-          <CIcon customClassName="sidebar-brand-narrow" icon={sygnet} height={32} />
+          {/* <CIcon customClassName="sidebar-brand-full" icon={logo} height={32} />
+          <CIcon customClassName="sidebar-brand-narrow" icon={sygnet} height={32} /> */}
+
+            {/* Your Logo Image */}
+          <img
+            src={KotiChargeLogo}
+            alt="KotiCharge Logo"
+            style={{ height: 32, marginLeft: 10 }}
+          />
+
+            {/* Brand Name */}
+          <span style={{ fontSize: '18px', fontWeight: 'bold', alignContent: 'center' , color: '#6dbd2e' }}>
+          .   KOTICHARGE
+          </span>
+
         </CSidebarBrand>
         <CCloseButton
           className="d-lg-none"
